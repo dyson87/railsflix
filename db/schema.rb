@@ -13,11 +13,17 @@
 ActiveRecord::Schema.define(version: 20190819180031) do
 
   create_table "games", force: :cascade do |t|
+    t.string "title"
+    t.string "genre"
+    t.integer "year_released"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
   create_table "movies", force: :cascade do |t|
+    t.string "title"
+    t.string "genre"
+    t.integer "year_released"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
