@@ -3,4 +3,10 @@ Rails.application.routes.draw do
 
 root to: "welcome#home"
 
+resources :movies
+resources :users
+resources :rentals
+resources :games
+resources :reviews
+
 end

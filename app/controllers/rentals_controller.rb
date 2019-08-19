@@ -1,5 +1,5 @@
 class RentalsController < ApplicationController
 
-    belongs_to :user
-    belongs_to :item
+    def index
+    end
 end
