@@ -1,13 +1,15 @@
-<<<<<<< HEAD
+
 <h1><%= @movie.title %></h1>
-=======
+
 <h1>Title: <%= @movie.title %></h1>
 <h2>Genre: <%= @movie.genre%></h2>
 <h2>Year released: <%= @movie.year_released%></h2>
-<<<<<<< HEAD
->>>>>>> 7afdb0dd43ee57a6d87886f94e1f8055ac749dc6
-=======
-<h3><%= image_tag @movie.img_url%></h3>
+
+<h3><%= image_tag @movie.img_url%></h3><br>
+
+<%= form_tag('/products/add', method: 'POST') do %>
+    <%= submit_tag 'Rent Me!' %>
+ <% end %> 
 
 <h4><%= link_to("Back to All Movies", movies_path) %></h4><br>
->>>>>>> f241283c4478cdba259b09e11d81155f58fa9054
+
