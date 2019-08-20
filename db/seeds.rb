@@ -25,11 +25,11 @@ m24 = Movie.create(title: "Jurassic World: Fallen Kingdom", genre: "Sci-Fi", yea
 m25 = Movie.create(title: "Get Out", genre: "Horror", year_released: 2017)
 
 
-u1 = User.create(username: "Brad", password: "cookies", movies: [godfather])
+u1 = User.create(username: "Brad", password: "cookies", movies: [])
 u2 = User.create(username: "Courtney", password: "ilovecookies", movies: [])
 u3 = User.create(username: "Britt", password: "iloveruby", movies: [])
-u4 = User.create(username: "Jeremy", password: "movies", movies: [godfather])
-u5 = User.create(username: "Brady", password: "bulldogs", movies: [godfather])
+u4 = User.create(username: "Jeremy", password: "movies", movies: [])
+u5 = User.create(username: "Brady", password: "bulldogs", movies: [])
 
 
 
