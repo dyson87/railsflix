@@ -1,3 +1,6 @@
 <h1>Title: <%= @game.title %></h1>
 <h2>Genre: <%= @game.genre%></h2>
 <h2>Year released: <%= @game.year_released%></h2>
+<h3><%= image_tag @game.img_url%></h3>
+
+<h4><%= link_to("Back to All Games", games_path) %></h4><br>

@@ -16,6 +16,7 @@ ActiveRecord::Schema.define(version: 20190819211657) do
     t.string "title"
     t.string "genre"
     t.integer "year_released"
+    t.string "img_url"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -24,6 +25,7 @@ ActiveRecord::Schema.define(version: 20190819211657) do
     t.string "title"
     t.string "genre"
     t.integer "year_released"
+    t.string "img_url"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
