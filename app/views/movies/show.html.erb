@@ -2,3 +2,5 @@
 <h2>Genre: <%= @movie.genre%></h2>
 <h2>Year released: <%= @movie.year_released%></h2>
 <h3><%= image_tag @movie.img_url%></h3>
+
+<h4><%= link_to("Back to All Movies", movies_path) %></h4><br>
