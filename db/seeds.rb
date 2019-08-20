@@ -33,6 +33,32 @@ u5 = User.create(username: "Brady", password: "bulldogs", movies: [godfather])
 
 
 
+g1 = Game.create(title: "Super Mario World", genre: "RPG", year_released: 1990)
+g2 = Game.create(title: "The Legend of Zelda: Ocarina of Time", genre: "RPG", year_released: 1998)
+g3 = Game.create(title: "Super Metroid", genre: "RPG", year_released: 1994)
+g4 = Game.create(title: "The Legend of Zelda: A Link to the Past", genre: "RPG", year_released: 1991)
+g5 = Game.create(title: "Super Smash Bros", genre: "Melee", year_released: 2001)
+g6 = Game.create(title: "Grand Theft Auto V", genre: "RPG", year_released: 2013)
+g7 = Game.create(title: "Red Dead Redemption", genre: "RPG", year_released: 2010)
+g8 = Game.create(title: "Super Mario 64", genre: "RPG", year_released: 1996)
+g9 = Game.create(title: "Halo: Combat Evolved", genre: "Shooter", year_released: 2001)
+g10 = Game.create(title: "Half-Life", genre: "RPG", year_released: 1998)
+g11 = Game.create(title: "Metroid Prime", genre: "RPG", year_released: 2002)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
