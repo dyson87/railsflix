@@ -1,8 +1,6 @@
 class WelcomeController < ApplicationController
 
     def welcome
-
-        render :home
-        
+        render :home  
     end
 end
