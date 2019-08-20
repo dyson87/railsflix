@@ -36,7 +36,6 @@ u4 = User.create(username: "Jeremy", password: "movies")
 u5 = User.create(username: "Brady", password: "bulldogs")
 
 
-
 g1 = Game.create(title: "Super Mario World", genre: "RPG", year_released: 1990, img_url: "https://ih0.redbubble.net/image.357641820.7233/flat,550x550,075,f.u4.jpg")
 g2 = Game.create(title: "The Legend of Zelda: Ocarina of Time", genre: "RPG", year_released: 1998, img_url: "https://images-na.ssl-images-amazon.com/images/I/717h-VyruuL._SY550_.jpg")
 g3 = Game.create(title: "Super Metroid", genre: "RPG", year_released: 1994, img_url: "https://ih1.redbubble.net/image.398740599.2657/ap,550x550,12x16,1,transparent,t.u3.png")
