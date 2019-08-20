@@ -1,3 +1,7 @@
+Movie.destroy_all
+User.destroy_all
+Game.destroy_all
+
 m1 = Movie.create(title: "The Godfather", genre: "Drama", year_released: 1972, img_url: "https://m.media-amazon.com/images/M/MV5BM2MyNjYxNmUtYTAwNi00MTYxLWJmNWYtYzZlODY3ZTk3OTFlXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_.jpg")
 m2 = Movie.create(title: "Casablanca", genre: "Romance", year_released: 1942, img_url: "https://usercontent1.hubstatic.com/12923772_f520.jpg")
 m3 = Movie.create(title: "Pulp Fiction", genre: "Drama", year_released: 1994, img_url: "https://m.media-amazon.com/images/M/MV5BNGNhMDIzZTUtNTBlZi00MTRlLWFjM2ItYzViMjE3YzI5MjljXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_.jpg")
