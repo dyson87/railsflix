@@ -1,11 +1,10 @@
 
-<h1><%= @movie.title %></h1>
-
 <h1>Title: <%= @movie.title %></h1>
-<h2>Genre: <%= @movie.genre%></h2>
-<h2>Year released: <%= @movie.year_released%></h2>
 
-<h3><%= image_tag @movie.img_url%></h3><br>
+<h2>Genre: <%= @movie.genre %></h2>
+<h2>Year released: <%= @movie.year_released %></h2>
+
+<h3><%= image_tag @movie.img_url %></h3><br>
 
 <%= form_tag('/rentals/add', method: 'POST') do %>
     <%= submit_tag 'Rent Me!' %>
