@@ -8,7 +8,7 @@
 
 
 
-<%= button_to 'Rent me!', {:controller => "rentals", :action => "create", @movie.id => :item_id, :user_id=> session[:user_id]} , :method=>:post  %>
+<%= button_to 'Rent me!', {:controller => "rentals", :action => "create", :item_id => @movie.id, :item_type => "Movie", :user_id=> session[:user_id]} , :method=>:post  %>
 
 
 <h4><%= link_to("Back to All Movies", movies_path) %></h4><br>
