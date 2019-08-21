@@ -6,9 +6,10 @@
 
 <h3><%= image_tag @movie.img_url %></h3><br>
 
-<%= form_tag('/rentals/update', method: 'POST') do %>
-    <%= submit_tag 'Rent Me!' %>
- <% end %> 
+
+
+<%= button_to 'Rent me!', {:controller => "rentals", :action => "create", @movie.id => :item_id, :user_id=> session[:user_id]} , :method=>:post  %>
+
 
 <h4><%= link_to("Back to All Movies", movies_path) %></h4><br>
 

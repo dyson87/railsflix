@@ -4,15 +4,21 @@ class RentalsController < ApplicationController
         @rentals = Rental.all
     end
 
+    def show
+        @rental = Rental.find(rental_params)
+    end
+
+    def create
+        @rental = Rental.new(rental_params)
+            @rental.save
+            redirect_to rental_path
+    end
+
+    end
+  
+private
 
 
-    # def add
-    #    cart << params[:rental]
-    #    render :index
-    # end
-
-
-    # def show
-    #     @rental = Rental.find(params[:id])
-    # end
-end
+    def rental_params
+        params.require(:rental).permit(:current_user, :item_type, :item_id)
+    end

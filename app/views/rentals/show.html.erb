@@ -1,3 +1,7 @@
-<%= form_tag('/rentals/update', method: 'POST') do %>
-    <%= submit_tag 'Rent Me!' %>
- <% end %> 
+<h1>A List of Your Rentals</h1>
+
+<ul>
+    <% @rental.each do |rental| %>
+        <li><%= rental %></li>
+    <% end %>
+</ul>
