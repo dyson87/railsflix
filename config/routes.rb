@@ -5,7 +5,7 @@ root to: "welcome#home"
 get '/login', to: 'sessions#new'
 post '/login', to: 'sessions#create'
 # get '/rentals', to: 'rentals#add'
-post '/rentals', to: 'rentals#add'
+# post '/rentals', to: 'rentals#add'
 delete '/logout', to: 'sessions#destroy'
 
 resources :movies

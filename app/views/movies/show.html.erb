@@ -6,7 +6,7 @@
 
 <h3><%= image_tag @movie.img_url %></h3><br>
 
-<%= form_tag('/rentals/add', method: 'POST') do %>
+<%= form_tag('/rentals/update', method: 'POST') do %>
     <%= submit_tag 'Rent Me!' %>
  <% end %> 
 

@@ -6,10 +6,10 @@ class RentalsController < ApplicationController
 
 
 
-    def add
-       cart << params[:rental]
-       render :index
-    end
+    # def add
+    #    cart << params[:rental]
+    #    render :index
+    # end
 
 
     # def show

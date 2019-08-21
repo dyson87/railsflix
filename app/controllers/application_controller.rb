@@ -1,7 +1,7 @@
 class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
 
-  helper_method :current_user, :logged_in?, :cart
+  helper_method :current_user, :logged_in?
 
     def current_user
         user_id = session[:user_id]
@@ -15,9 +15,9 @@ class ApplicationController < ActionController::Base
     end
   end
 
-  def cart
-    session[:cart] ||=[]
-  end
+  # def cart
+  #   session[:cart] ||=[]
+  # end
 
   # def log_in(user)
   #   session[:user_id] = user.id
