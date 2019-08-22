@@ -8,7 +8,7 @@ delete '/logout', to: 'sessions#destroy'
 
 resources :movies, only: [:index, :show]
 resources :users, only: [:new]
-resources :rentals, only: [:index, :create]
+resources :rentals, only: [:index, :show, :create]
 resources :games, only: [:index, :show]
 # resources :reviews
 
