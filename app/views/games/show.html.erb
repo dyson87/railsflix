@@ -3,9 +3,8 @@
 <h2>Year released: <%= @game.year_released%></h2>
 <h3><%= image_tag @game.img_url%></h3>
 
-<%= form_tag('/rentals/update', method: 'POST') do %>
-    <%= submit_tag 'Rent Me!' %>
- <% end %> 
+<%= button_to 'Rent me!', {:controller => "rentals", :action => "create", :item_id => @game.id, :item_type => "Game", :user_id=> session[:user_id]} , :method=>:post  %>
+
 
 
 <h4><%= link_to("Back to All Games", games_path) %></h4><br>
