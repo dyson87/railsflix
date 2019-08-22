@@ -2,6 +2,10 @@
 
 <ul>
     <% @rentals.each do |rental| %>
-        <li><%= rental.item_id %></li>
+        <% if rental.item_type == "Movie" %>
+            <li><%= rental.movie.title %></li>
+        <% else %>
+            <li><%= rental.game.title %></li>
+        <% end %>
     <% end %>
 </ul>
