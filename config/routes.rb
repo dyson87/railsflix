@@ -8,10 +8,10 @@ post '/login', to: 'sessions#create'
 # post '/rentals', to: 'rentals#add'
 delete '/logout', to: 'sessions#destroy'
 
-resources :movies
-resources :users
-resources :rentals
-resources :games
-resources :reviews
+resources :movies, only: [:index, :show]
+resources :users, only: [:new]
+resources :rentals, only: [:index, :create]
+resources :games, only: [:index, :show]
+# resources :reviews
 
 end

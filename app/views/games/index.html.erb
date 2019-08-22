@@ -1,8 +1,8 @@
-<h1>List of Games</h1>
+<h1>List of Games</h1><br>
 
 <% @games.each do |game| %>
     <li>
-        <%= link_to(game.title, "/games/#{game.id}") %>
+        <%= link_to(game.title, "/games/#{game.id}") %><br><br>
     </li>
     <% end %>
 
