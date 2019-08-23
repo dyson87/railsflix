@@ -15,6 +15,16 @@ class RentalsController < ApplicationController
         redirect_to rentals_path
     end
 
+    def destroy
+        
+        @rental = Rental.find(params[:id])
+        @rental.destroy
+        redirect_to restaurants_path
+    
+    end
+ 
+
+
     private
 
     
