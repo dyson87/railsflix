@@ -19,7 +19,7 @@ class RentalsController < ApplicationController
         
         @rental = Rental.find(params[:id])
         @rental.destroy
-        redirect_to restaurants_path
+        redirect_to rentals_path
     
     end
  

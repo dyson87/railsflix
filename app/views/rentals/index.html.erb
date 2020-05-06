@@ -4,12 +4,10 @@
     <% @rentals.each do |rental| %>
         <% if rental.item_type == "Movie" %>
             <li><%= rental.movie.title %><br>
-            Rented at: <%= rental.created_at%></li>
+            Rented at: <%= rental.created_at %></li>
         <% else %>
             <li><%= rental.game.title %> <br>
-            Rented at: <%= rental.created_at%> </li>
+            Rented at: <%= rental.created_at %> </li>
         <% end %>
     <% end %>
 </ul>
-
-

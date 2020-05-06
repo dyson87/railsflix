@@ -1,29 +1,14 @@
 <div class="jumbotron">
-<h1 class="display-4">Welcome TO RailsFlix!</h1>
-<p class="lead">Your Number 1 Spot for Movie and Game Rental.</p>
+<h1 class="display-4">Welcome to RailsFlix!</h1>
+<p class="lead">Your #1 Spot for Movie and Game Rentals.</p>
 <hr class="my-4">
-<p>Just select a title, click "rent" and it will be sent to you using Brits Courier Service in 2-3 business days.</p>
-<a class="btn btn-primary btn-lg" href="#" role="button">Sign Up</a>
-</div>
-
-<div class="card mb-3" style="max-width: 540px;">
-  <div class="row no-gutters">
-    <div class="col-md-4">
-      <img src="..." class="card-img" alt="...">
-    </div>
-    <div class="col-md-8">
-      <div class="card-body">
-        <h5 class="card-title">Movies</h5>
-        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-      </div>
-    </div>
-  </div>
+<p>Just select a title, click "rent" and it will be sent to your doorstep in 2-3 business days.</p>
+<h4><%= link_to("Already have an account? Click here.", login_path) %></h4>
 </div>
 
 
-
-<h4><%= link_to("Movies", movies_path) %></h4><br>
-<h4><%= link_to("Games", games_path) %></h4><br>
-<h4><%= link_to("Login", login_path) %></h4><br>
-<h4><%= link_to("Don't have an account? Create one here.", new_user_path) %></h4>
+<div class="jumbotron" style="background-color:transparent !important;">
+<h4 class="lead"><%= link_to("Movies", movies_path) %></h4><br>
+<h4 class="lead"><%= link_to("Games", games_path) %></h4><br>
+<h4 class="lead"><%= link_to("Login", login_path) %></h4><br>
+<h4 class="lead"><%= link_to("Don't have an account? Create one here.", new_user_path) %></h4>
